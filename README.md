@@ -70,7 +70,7 @@ Example User - **EID: 10001 PW: password123**
 - Request / Print Payslip
 - Request Leave / OT
 - Contact and Admin/Ticketing System (Mockup)
-- Dark Mode
+- Dark Mode | Classic View / Modern View
 - Notification System / RSS Feed
 
 ## Group Members:
