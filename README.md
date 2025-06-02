@@ -16,7 +16,7 @@ GUI-Trial and better file-handling for the MotorPH App
 mvn clean compile exec:java
 ```
 
-### **Use these test credentials to log in!**
+### **Use these test credentials from /data/login.csv to log in!**
 
 Example Admin - **EID: 10000 PW: admin1234**
 
