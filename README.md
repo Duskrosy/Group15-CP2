@@ -2,7 +2,7 @@
 
 GUI-Trial and better file-handling for the MotorPH App
 
-I have a name for it now; MotorPESH
+I have a name for it now; **MotorPESH**
 
 ## How to Run
 
