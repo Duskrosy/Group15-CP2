@@ -62,10 +62,6 @@ Example User - **EID: 10001 PW: password123**
 
 ## Group Members:
 - Gavril (Pogi)
-- DAYANG GWAPA
-- JENIM D.
--  mae13504
-- Sherlyn M.
 - hi
 
 ## Built With
