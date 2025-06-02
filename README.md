@@ -2,6 +2,8 @@
 
 GUI-Trial and better file-handling for the MotorPH App
 
+I have a name for it now; MotorPESH
+
 ## How to Run
 
 1. Make sure you have **Java 17+** and **Maven** installed.
