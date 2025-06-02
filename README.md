@@ -67,6 +67,11 @@ Example User - **EID: 10001 PW: password123**
 - Encryption of data for protection especially with read/write files
 - Forgot Password / Sign-up OR Integration with MS Azure
 - Compute Every Type of Deductions with Tiering
+- Request / Print Payslip
+- Request Leave / OT
+- Contact and Admin/Ticketing System (Mockup)
+- Dark Mode
+- Notification System / RSS Feed
 
 ## Group Members:
 - Gavril (Pogi)
