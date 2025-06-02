@@ -60,6 +60,12 @@ Example User - **EID: 10001 PW: password123**
 - Payroll entries are automatically captured using the Time Tracker.
 - You can toggle 12-hour and 24-hour formats in the Time Tracker.
 
+## COMING SOON!
+- Amazing GUI with UI/UX 😂
+- Encryption of data for protection especially with read/write files
+- Forgot Password / Sign-up OR Integration with MS Azure
+- Compute Every Type of Deductions with Tiering
+
 ## Group Members:
 - Gavril (Pogi)
 - hi
