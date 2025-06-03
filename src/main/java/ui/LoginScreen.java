@@ -158,22 +158,52 @@ public class LoginScreen extends JFrame {
         setVisible(true);
     }
 
-		private void doLogin(JButton loginButton) {
-			String employeeID = employeeIDField.getText().trim();
-			String password = new String(passwordField.getPassword()).trim();
-			loginButton.setEnabled(false);
+private void doLogin(JButton loginButton) {
+    String employeeID = employeeIDField.getText().trim();
+    String password = new String(passwordField.getPassword()).trim();
+    loginButton.setEnabled(false);
 
-		SwingUtilities.invokeLater(() -> {
-			String role = Authenticator.authenticate(employeeID, password);
-			loginButton.setEnabled(true);
-			if (role != null) {
-				JOptionPane.showMessageDialog(this, "Welcome, " + role + "!", "Login Success", JOptionPane.INFORMATION_MESSAGE);
-				dispose(); // <-- this closes the login window
-				new Dashboard(employeeID, role); // <-- this opens your dashboard!
+    SwingUtilities.invokeLater(() -> {
+        String role = Authenticator.authenticate(employeeID, password);
+        loginButton.setEnabled(true);
+        if (role != null) {
+            // Show loading dialog for 0.8 seconds (placebo effect)
+            JDialog loadingDialog = createLoadingDialog();
+            new Thread(() -> {
+                try {
+                    // show 0.5 to 1.2 seconds for realism
+                    int delay = 500 + (int)(Math.random() * 700);
+                    Thread.sleep(delay);
+                } catch (InterruptedException ignored) {}
+                // Hide loading and open dashboard
+                SwingUtilities.invokeLater(() -> {
+                    loadingDialog.dispose();
+                    dispose();
+                    new Dashboard(employeeID, role);
+                });
+            }).start();
+            loadingDialog.setVisible(true);
         } else {
-				JOptionPane.showMessageDialog(this, "Invalid credentials", "Login Error", JOptionPane.ERROR_MESSAGE);
-			}
+            JOptionPane.showMessageDialog(this, "Invalid credentials", "Login Error", JOptionPane.ERROR_MESSAGE);
+        }
     });
+}
+
+// Helper to create a nice loading dialog
+private JDialog createLoadingDialog() {
+    JDialog dialog = new JDialog(this, "Logging In...", true);
+    JPanel panel = new JPanel(new BorderLayout());
+    panel.setBorder(BorderFactory.createEmptyBorder(20, 40, 20, 40));
+    panel.add(new JLabel("Logging in, please wait...", JLabel.CENTER), BorderLayout.NORTH);
+    // Add a progress bar (animated)
+    JProgressBar bar = new JProgressBar();
+    bar.setIndeterminate(true);
+    panel.add(bar, BorderLayout.CENTER);
+    dialog.setUndecorated(true);
+    dialog.setContentPane(panel);
+    dialog.pack();
+    dialog.setLocationRelativeTo(this);
+    return dialog;
 }
 
     public static void main(String[] args) {
