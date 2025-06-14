@@ -1,10 +1,14 @@
 ## Group 9 CP2 I have a name for it now; **MotorPESH**
 
 HUGE UI UPDATE!
-Added new functionalities like soft-delete to the CRUD, Time in - Time Out - Lunch Break, Hide Info,
-Non-working Night Mode, Notification Button (Maybe RSS Feed), Copy/Clipboard Button, Basis for Ticketing System
-Profile Picture, Profile Editing
+Added new functionalities like: 
+
+```
+soft-delete to the CRUD | Time in - Time Out - Lunch Break | Hide Info |
+Non-working Night Mode (IT WILL STAY STUCK IN NIGHT MODE) | Notification Button (Maybe RSS Feed) | Copy/Clipboard Button |
+Basis for Ticketing System | Profile Picture | Profile Editing|
 & More!
+```
 
 
 ## How to Run
