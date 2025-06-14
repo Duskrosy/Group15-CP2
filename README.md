@@ -13,7 +13,8 @@ Added new functionalities like:
 - [x]  Basis for Ticketing System 
 - [x]  Profile Picture 
 - [x]  Profile Editing
-**& More!**
+
+- **& More!**
 
 
 
