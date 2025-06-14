@@ -70,7 +70,7 @@ Example User - **EID: 10001 PW: garcia2024**
 - You can toggle 12-hour and 24-hour formats in the Time Tracker.
 
 ## COMING SOON!
-[x] Amazing GUI with UI/UX 😂
+- [x] Amazing GUI with UI/UX 😂
 - Encryption of data for protection especially with read/write files (salt andd hash)
 - Forgot Password / Sign-up OR Integration with MS Azure
 - Compute Every Type of Deductions with Tiering
