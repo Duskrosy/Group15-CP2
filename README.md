@@ -76,9 +76,9 @@ Example User - **EID: 10001 PW: garcia2024**
 - Compute Every Type of Deductions with Tiering
 - Request / Print Payslip
 - Request Leave / OT
-[x] Contact and Admin/Ticketing System (Mockup)
+- [x] Contact and Admin/Ticketing System (Mockup)
 [Maybe] Dark Mode | Classic View / Modern View
-[x] Notification System / RSS Feed
+- [x] Notification System / RSS Feed
 
 ## Group Members:
 - Gavril (Pogi)
