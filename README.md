@@ -1,8 +1,11 @@
-## Group 9 CP2
+## Group 9 CP2 I have a name for it now; **MotorPESH**
 
-GUI-Trial and better file-handling for the MotorPH App
+HUGE UI UPDATE!
+Added new functionalities like soft-delete to the CRUD, Time in - Time Out - Lunch Break, Hide Info,
+Non-working Night Mode, Notification Button (Maybe RSS Feed), Copy/Clipboard Button, Basis for Ticketing System
+Profile Picture, Profile Editing
+& More!
 
-I have a name for it now; **MotorPESH**
 
 ## How to Run
 
@@ -20,9 +23,9 @@ mvn clean compile exec:java
 
 ### **Use these test credentials from /data/login.csv to log in!**
 
-Example Admin - **EID: 10000 PW: admin1234**
+Example Admin - **EID: 10000 PW: admin123**
 
-Example User - **EID: 10001 PW: password123**
+Example User - **EID: 10001 PW: garcia2024**
 
 ## ✅ Features Checklist
 
@@ -63,15 +66,15 @@ Example User - **EID: 10001 PW: password123**
 - You can toggle 12-hour and 24-hour formats in the Time Tracker.
 
 ## COMING SOON!
-- Amazing GUI with UI/UX 😂
-- Encryption of data for protection especially with read/write files
+[x] Amazing GUI with UI/UX 😂
+- Encryption of data for protection especially with read/write files (salt andd hash)
 - Forgot Password / Sign-up OR Integration with MS Azure
 - Compute Every Type of Deductions with Tiering
 - Request / Print Payslip
 - Request Leave / OT
-- Contact and Admin/Ticketing System (Mockup)
-- Dark Mode | Classic View / Modern View
-- Notification System / RSS Feed
+[x] Contact and Admin/Ticketing System (Mockup)
+[Maybe] Dark Mode | Classic View / Modern View
+[x] Notification System / RSS Feed
 
 ## Group Members:
 - Gavril (Pogi)
